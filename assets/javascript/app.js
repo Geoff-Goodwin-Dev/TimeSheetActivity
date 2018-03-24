@@ -1,11 +1,11 @@
 // FIREBASE INITIALIZATION
 var config = {
-  apiKey: "AIzaSyA9jDoGUYomZskVdtfkAwb3z7lm-LMyTNM",
-  authDomain: "timesheetactivity-24b64.firebaseapp.com",
-  databaseURL: "https://timesheetactivity-24b64.firebaseio.com",
-  projectId: "timesheetactivity-24b64",
-  storageBucket: "timesheetactivity-24b64.appspot.com",
-  messagingSenderId: "722422801080"
+  apiKey: "AIzaSyAcOwuwzHC4iVsF66lnaA3sKMV9QcHyLOQ",
+  authDomain: "glg2018-02-gtcbc.firebaseapp.com",
+  databaseURL: "https://glg2018-02-gtcbc.firebaseio.com",
+  projectId: "glg2018-02-gtcbc",
+  storageBucket: "glg2018-02-gtcbc.appspot.com",
+  messagingSenderId: "371783620093"
 };
 firebase.initializeApp(config);
 
@@ -40,6 +40,11 @@ $(document).ready(function() {
     formRole = $("#formRole").val().trim();
     formStartDate = $("#formStartDate").val().trim();
     formMonthlyRate = $("#formMonthlyRate").val().trim();
+
+    console.log("Name: ", formEmployeeName);
+    console.log("Role: ", formRole);
+    console.log("Start Date: ", formStartDate);
+    console.log("Monthly Rate: ", formMonthlyRate);
 
     // database.ref().push() {
     //   name: formEmployeeName,
